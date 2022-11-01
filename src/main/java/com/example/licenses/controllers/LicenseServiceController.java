@@ -1,8 +1,8 @@
-package com.thoughtmechanix.licenses.controllers;
+package com.example.licenses.controllers;
 
-import com.thoughtmechanix.licenses.model.License;
-import com.thoughtmechanix.licenses.services.LicenseService;
-import com.thoughtmechanix.licenses.config.ServiceConfig;
+import com.example.licenses.config.ServiceConfig;
+import com.example.licenses.model.License;
+import com.example.licenses.services.LicenseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

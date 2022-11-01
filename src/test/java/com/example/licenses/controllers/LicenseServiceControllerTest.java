@@ -1,8 +1,8 @@
-package com.thoughtmechanix.licenses.controllers;
+package com.example.licenses.controllers;
 
-import com.thoughtmechanix.licenses.clients.OrganizationFeignClient;
-import com.thoughtmechanix.licenses.model.Organization;
-import com.thoughtmechanix.licenses.services.LicenseService;
+import com.example.licenses.clients.OrganizationFeignClient;
+import com.example.licenses.model.Organization;
+import com.example.licenses.services.LicenseService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

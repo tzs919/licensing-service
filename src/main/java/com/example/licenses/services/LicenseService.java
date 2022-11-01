@@ -1,10 +1,10 @@
-package com.thoughtmechanix.licenses.services;
+package com.example.licenses.services;
 
-import com.thoughtmechanix.licenses.clients.OrganizationFeignClient;
-import com.thoughtmechanix.licenses.config.ServiceConfig;
-import com.thoughtmechanix.licenses.model.License;
-import com.thoughtmechanix.licenses.model.Organization;
-import com.thoughtmechanix.licenses.repository.LicenseRepository;
+import com.example.licenses.clients.OrganizationFeignClient;
+import com.example.licenses.config.ServiceConfig;
+import com.example.licenses.model.License;
+import com.example.licenses.model.Organization;
+import com.example.licenses.repository.LicenseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,7 +32,7 @@ public class LicenseService {
         return organization;
     }
 
-    public License getLicense(String organizationId,String licenseId) {
+    public License getLicense(String organizationId, String licenseId) {
         License license = licenseRepository.findByOrganizationIdAndLicenseId(organizationId, licenseId);
 
         Organization org = retrieveOrgInfo(organizationId);

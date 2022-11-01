@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.thoughtmechanix</groupId>
+    <groupId>com.example</groupId>
     <artifactId>licensing-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -70,7 +70,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <start-class>com.thoughtmechanix.licenses.Application</start-class>
+        <start-class>com.example.licenses.Application</start-class>
         <docker.image.name>johncarnell/tmx-licensing-service</docker.image.name>
         <docker.image.tag>section13</docker.image.tag>
     </properties>
