@@ -1,0 +1,15 @@
+example.property:
+  "I AM IN THE DEFAULT"
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+#  datasource:
+#    driverClassName: "org.h2.Driver"
+#    url: "jdbc:h2:mem:"
+#    username: sa
+#    password: sa
+#    initialization-mode: always
+#    schema: classpath:schema.sql
