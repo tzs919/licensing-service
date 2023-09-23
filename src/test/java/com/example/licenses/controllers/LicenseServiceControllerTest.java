@@ -6,9 +6,9 @@ import com.example.licenses.services.LicenseService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -17,8 +17,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
-
-import java.lang.reflect.Field;
 
 import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.when;
@@ -37,7 +35,7 @@ public class LicenseServiceControllerTest {
     @Autowired
     private LicenseService licenseService;
 
-    @Mock
+    @MockBean
     OrganizationFeignClient organizationFeignClient;
 
     @Before
@@ -45,9 +43,9 @@ public class LicenseServiceControllerTest {
         //获取mockmvc对象实例
         mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
 
-        Field fieldOrganizationFeignClient = LicenseService.class.getDeclaredField("organizationFeignClient");
-        fieldOrganizationFeignClient.setAccessible(true);
-        fieldOrganizationFeignClient.set(licenseService, this.organizationFeignClient);
+//        Field fieldOrganizationFeignClient = LicenseService.class.getDeclaredField("organizationFeignClient");
+//        fieldOrganizationFeignClient.setAccessible(true);
+//        fieldOrganizationFeignClient.set(licenseService, this.organizationFeignClient);
     }
 
     @Test
